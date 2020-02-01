@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_music">
+
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="com.example.syncg3.ui.music.MusicFragment"
+        android:label="@string/title_music"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/navigation_climate"
+        android:name="com.example.syncg3.ui.climate.ClimateFragment"
+        android:label="@string/title_climate"
+        tools:layout="@layout/fragment_climate" />
+
+    <fragment
+        android:id="@+id/navigation_phone"
+        android:name="com.example.syncg3.ui.phone.PhoneFragment"
+        android:label="@string/title_phone"
+        tools:layout="@layout/fragment_phone" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.syncg3.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
